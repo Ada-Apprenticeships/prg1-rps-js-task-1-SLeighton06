@@ -1,4 +1,4 @@
-function rockPaperScissors(player1, player2) {
+function rockPaperScissors(player1Input, player2Input) {
   const winAgainst = {
     rock: ["scissors", "lizard"],
     paper: ["rock", "spock"],
@@ -7,7 +7,7 @@ function rockPaperScissors(player1, player2) {
     spock: ["rock", "scissors"],
   };
 
-  return player1 === player2 ? "draw" : winAgainst[player1].includes(player2) ? "player1" : "player2";
+  return player1Input === player2Input ? "draw" : winAgainst[player1Input].includes(player2Input) ? "player1" : "player2";
 }
 
 // Leave this code here for the automated tests
